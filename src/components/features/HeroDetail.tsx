@@ -1,6 +1,6 @@
 import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar"
 import { motion } from "framer-motion"
-import ai4 from "../../assets/ai4.jpg"
+import ai4 from "../../assets/zack.jpeg"
 import { useCallback, useEffect, useState } from "react";
 import { AvatarC } from "./AvatarC";
 

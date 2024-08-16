@@ -39,20 +39,20 @@ export const Navbar = ({className} : {className?:string}) => {
 
         {/* Menu pour desktop */}
         <ul className="hidden md:flex md:space-x-6">
-        <a href="#Presentation"><li className="flex space-x-2"><Home size={20}/><span>Présentation</span></li></a>
-        <a href="#Competences"><li className="flex space-x-2"><GraduationCap size={20}/><span>Compétences</span></li></a>
-        <a href="#Projets"><li className="flex space-x-2"><FolderDot size={20}/><span>Projets</span></li></a>
-        <a href="#Contact"><li className="flex space-x-2"><Mail size={20}/><span>Contact</span></li></a>
+        <a href="#Presentation"><li className="flex space-x-2 active:text-muted"><Home size={20}/><span>Présentation</span></li></a>
+        <a href="#Competences"><li className="flex space-x-2 active:text-muted"><GraduationCap size={20}/><span>Compétences</span></li></a>
+        <a href="#Projets"><li className="flex space-x-2 active:text-muted"><FolderDot size={20}/><span>Projets</span></li></a>
+        <a href="#Contact"><li className="flex space-x-2 active:text-muted"><Mail size={20}/><span>Contact</span></li></a>
           <li><ThemeToggle/></li>
         </ul>
 
         {/* Dropdown pour mobile/tablette */}
         {isOpen && (
           <ul className="md:hidden absolute top-20 left-0 w-full dark:bg-[#0a001a] bg-[#efe5ff] z-20">
-            <a href="#Presentation"><li className="px-6 py-2 flex space-x-2"><Home size={20}/><span>Présentation</span></li></a>
-            <a href="#Competences"><li className="px-6 py-2 flex space-x-2"><GraduationCap size={20}/><span>Compétences</span></li></a>
-            <a href="#Projets"><li className="px-6 py-2 flex space-x-2"><FolderDot size={20}/><span>Projets</span></li></a>
-            <a href="#Contact"><li className="px-6 py-2 flex space-x-2"><Mail size={20}/><span>Contact</span></li></a>
+            <a href="#Presentation"><li className="px-6 py-2 flex space-x-2 active:text-muted"><Home size={20}/><span>Présentation</span></li></a>
+            <a href="#Competences"><li className="px-6 py-2 flex space-x-2 active:text-muted"><GraduationCap size={20}/><span>Compétences</span></li></a>
+            <a href="#Projets"><li className="px-6 py-2 flex space-x-2 active:text-muted"><FolderDot size={20}/><span>Projets</span></li></a>
+            <a href="#Contact"><li className="px-6 py-2 flex space-x-2 active:text-muted"><Mail size={20}/><span>Contact</span></li></a>
             <li className="px-6 py-2"><ThemeToggle/></li>
           </ul>
         )}
