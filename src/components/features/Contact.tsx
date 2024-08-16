@@ -63,7 +63,7 @@ export function Contact() {
 
  //Affichage
   return (
-    <div className="flex flex-col md:flex-row items-center justify-center md:mt-36 dark:bg-[#0a001a] bg-[#efe5ff] relative w-full">
+    <div id="Contact" className="flex flex-col md:flex-row items-center justify-center md:mt-36 dark:bg-[#0a001a] bg-[#efe5ff] relative w-full">
       <Cobe />
       <div className="flex justify-center md:mr-[200px]">
         <form onSubmit={handleSubmit(onSubmit)}>
@@ -79,7 +79,7 @@ export function Contact() {
                 type="text"
                 placeholder="Nom"
                 name='name'
-                className="col-span-12 p-3 rounded-md  bg-blue-gray-50 dark:bg-[#0a001a] bg-[#efe5ff] border border-accent-foreground font1 outline-none"
+                className="col-span-12 p-3 font3 rounded-md  bg-blue-gray-50 dark:bg-[#0a001a] bg-[#efe5ff] border border-accent-foreground font1 outline-none"
               />
             </div>
               {errors.name && errors.name.type === 'required' && <p className='col-span-6 text-[#0a001a] dark:text-[#efe5ff] font2'>Ce champ est requis</p>}
@@ -93,7 +93,7 @@ export function Contact() {
                   pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i
                 })} placeholder="Votre adresse mail"
                 name='email'
-                className='col-span-12 bg-blue-gray-50 h-[50px] dark:bg-[#0a001a] bg-[#efe5ff] border border-accent-foreground p-3 rounded-md font1 outline-none'
+                className='col-span-12 font3 bg-blue-gray-50 h-[50px] dark:bg-[#0a001a] bg-[#efe5ff] border border-accent-foreground p-3 rounded-md font1 outline-none'
               />
               {errors.email && errors.email.type === "required" && <p className='col-span-8 mr-20 text-[#0a001a] dark:text-[#efe5ff] font2'>Veuillez entrer une adresse mail</p>}
               {errors.email && errors.email.type === "pattern" && <p className='col-span-8 mr-20 text-[#0a001a] dark:text-[#efe5ff] font2' >Vous saisissez une fausse address </p>}
@@ -108,7 +108,7 @@ export function Contact() {
                 })}
                 placeholder='Message'
                 name='message'
-                className='col-span-12 resize-none p-20 bg-blue-gray-50 dark:bg-[#0a001a] bg-[#efe5ff] border border-accent-foreground rounded-md font1 outline-none'
+                className='col-span-12 font3 resize-none p-20 bg-blue-gray-50 dark:bg-[#0a001a] bg-[#efe5ff] border border-accent-foreground rounded-md font1 outline-none'
               >
               </textarea>
             </div>
@@ -117,7 +117,7 @@ export function Contact() {
             {errors.message && errors.message.type === 'pattern' && <p className='col-span-8 mr-20 text-[#0a001a] dark:text-[#efe5ff] font2'>Ceci n'est pas un message</p>}
             <div className='grid col-span-12'>
               <motion.button
-                className='col-span-3 dark:bg-[#a877fd] bg-[#330288] font1 text-[#efe5ff] dark:text-[#0a001a] p-2 rounded-md'
+                className='col-span-3 dark:bg-[#a877fd] bg-[#330288] font3 text-[#efe5ff] dark:text-[#0a001a] p-2 rounded-md'
                 animate={{ scale: movbut ? 1.1 : 1 }}
                 onClick={() => {
                   setMovbut(true);

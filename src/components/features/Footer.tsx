@@ -1,7 +1,7 @@
 export default function Footer() {
     return (
   
-    <footer className="bg-[#efe5ff] border border-t-accent text-center text-white dark:bg-[#0a001a] mt-28">
+    <footer className="bg-[#efe5ff] text-center text-white dark:bg-[#0a001a] mt-28">
       <div className="container pt-9">
         <div className="mb-9 flex justify-center">
           <a href="https://www.facebook.com/zacharie.sebo.106/" className="mr-9 text-neutral-800 dark:text-neutral-200">
@@ -59,7 +59,7 @@ export default function Footer() {
   
       {/* <!--Copyright section--> */}
       <div
-        className="bg-neutral-300 p-4 text-center text-neutral-700 dark:text-[#efe5ff] dark:bg-[#0a001a] font3 ">
+        className="bg-neutral-300 p-4 text-center border border-t-accent text-neutral-700 dark:text-[#efe5ff] dark:bg-[#0a001a] font3 ">
         © 2024 Copyright :
         <a
           className="text-neutral-800 dark:text-[#efe5ff] font3 ml-2"

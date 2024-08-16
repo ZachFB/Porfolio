@@ -60,7 +60,7 @@ export function Projets() {
   ];
 
   return (
-    <div className="h-[20rem] md:h-[40rem] [perspective:1000px] relative b flex flex-col max-w-5xl mx-auto w-full  items-start justify-start lg:mt-[200px] mt-[180px]">
+    <div id="Projets" className="h-[20rem] md:h-[40rem] [perspective:1000px] relative b flex flex-col max-w-5xl mx-auto w-full  items-start justify-start lg:mt-[200px] mt-[180px]">
       <h1 className="md:text-5xl text-4xl w-full font3 text-left pl-3 mb-5">Mes projets</h1>
       <Tabs tabs={tabs} />
     </div>
