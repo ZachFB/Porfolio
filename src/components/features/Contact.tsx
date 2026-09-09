@@ -18,7 +18,7 @@ interface FormData {
 
 export function Contact() {
   const [movbut, setMovbut] = useState(false);
-  const { register, handleSubmit, formState: { errors } } = useForm<FormData>();
+  const { register, handleSubmit, reset, formState: { errors } } = useForm<FormData>();
   const rootRef = useRef<HTMLDivElement>(null);
   const globeSlotRef = useRef<HTMLDivElement>(null);
   const [showGlobe, setShowGlobe] = useState(false);
@@ -83,13 +83,14 @@ export function Contact() {
     }).then((res) => res.json());
   
     if (res.success) {
+      reset();
       Swal.fire({
         title: "Envoyé ! 🎉",
         text: "Merci de m'avoir contacté, je serai à vous sous peu de temps.",
         icon: "success",
         confirmButtonText: "Fermer",
         customClass: {
-            popup: 'rounded-xl bg-[#121212] text-[#fff] absolute h-[400px] w[200px] md:mb-20',
+            popup: 'rounded-xl bg-[#121212] text-[#fff] px-6 py-8 md:mb-20',
             title: 'font3',
             confirmButton: 'h-[50px] w-[150px] bg-[#efe5ff] text-[#0a001a] rounded-lg',
           },
@@ -101,9 +102,9 @@ export function Contact() {
         icon: "error",
         confirmButtonText: "Fermer",
         customClass: {
-            popup: 'rounded-xl bg-[#121212] text-[#fff] absolute h-[400px] w[200px] md:mb-20',
+            popup: 'rounded-xl bg-[#121212] text-[#fff] px-6 py-8 md:mb-20',
             title: 'font3',
-            confirmButton: 'h-[50px] w-[150px]  text-[#0a001a] rounded-lg',
+            confirmButton: 'h-[50px] w-[150px] bg-gradient-to-r from-[#330288] to-[#a877fd] text-[#efe5ff] rounded-lg',
           },
       });
     }
@@ -189,4 +190,3 @@ export function Contact() {
     </div>
   );
 }
-
