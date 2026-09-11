@@ -70,18 +70,20 @@
 
 @font-face {
   font-family: "Not";
-  src: url(assets/fonts/family/Raleway/static/Raleway-MediumItalic.ttf);
-
+  src: url(/fonts/Raleway-MediumItalic.ttf);
+  font-display: swap;
 }
 
 @font-face{
   font-family: "Nunito";
-  src: url('assets/fonts/family/Nunito/static/Nunito-Medium.ttf');
+  src: url('/fonts/Nunito-Medium.ttf');
+  font-display: swap;
 }
 
 @font-face{
   font-family: "NunitoIta";
-  src: url("assets/fonts/family/Nunito/static/Nunito-MediumItalic.ttf");
+  src: url("/fonts/Nunito-MediumItalic.ttf");
+  font-display: swap;
 }
 
 @font-face {
